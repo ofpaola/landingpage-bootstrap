@@ -9,13 +9,16 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  
-    <style>
-      .tamanho-social {
-        width: 50px;
-        height: 50px;
-      }
-    </style>
+
+  <style>
+    .tamanho-social {
+      width: 50px;
+      height: 50px;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 
   <title>Território Aleatório</title>
 </head>
@@ -24,9 +27,9 @@
 
   <!-- menu logo -->
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light.bg-gradient">
-    <a class="navbar-brand" href="#">
-      <img src="assets/img/logo.png" alt="" width="35" height="35" class="d-inline-block align-top">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#Home">
+      <img src="assets/img/logo.png" alt="" width="30" height="30" class="d-inline-block align-top">
       Território Aleatório</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,30 +38,30 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#DicasDeViagens">Dicas de Viagens</a>
+          <a class="nav-link" href="#dicasDeViagens">Dicas de Viagens</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#GuiaViajante">Guia Viajante</a>
+          <a class="nav-link" href="#guiaViajante">Guia Viajante</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#Destinos" id="navbarDropdown" role="button" data-toggle="dropdown"
+          <a class="nav-link dropdown-toggle" href="#destinos" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Destinos
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#Africa">África</a>
-            <a class="dropdown-item" href="#America">América</a>
-            <a class="dropdown-item" href="#Antartida">Antártida</a>
-            <a class="dropdown-item" href="#Asia">Ásia</a>
-            <a class="dropdown-item" href="#Europa">Europa</a>
-            <a class="dropdown-item" href="#Oceania">Oceania</a>
+            <a class="dropdown-item" href="#africa">África</a>
+            <a class="dropdown-item" href="#america">América</a>
+            <a class="dropdown-item" href="#antartida">Antártida</a>
+            <a class="dropdown-item" href="#asia">Ásia</a>
+            <a class="dropdown-item" href="#europa">Europa</a>
+            <a class="dropdown-item" href="#oceania">Oceania</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#Contato">Contato</a>
+          <a class="nav-link" href="#contato">Contato</a>
         </li>
       </ul>
     </div>
@@ -112,9 +115,9 @@
 
   <!-- imagens/informações do body -->
 
-  <div class="container">
+  <div class="container" id="dicasDeViagens">
     <div class="card-columns p-5">
-      <div class="card">
+      <div class="card border-info">
         <img src="assets/img/nacional.jpg" class="card-img-top" alt="Mapa do Brasil">
         <div class="card-body">
           <h3 class="card-title">Viagens nacionais</h3>
@@ -124,7 +127,7 @@
           <p class="card-text text-muted">Last updated 1 day ago</p>
         </div>
       </div>
-      <div class="card bg-light">
+      <div class="card bg-light border-info">
         <blockquote class="blockquote mb-0 card-body">
           <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas sint sed animi soluta magni? Neque
             ipsum placeat recusandae aspernatur et nam, cum eum hic quos ducimus possimus cupiditate autem!"</p>
@@ -133,7 +136,7 @@
           </footer>
         </blockquote>
       </div>
-      <div class="card">
+      <div class="card border-info">
         <img src="assets/img/carro.jpg" class="card-img" alt="">
         <div class="card-body">
           <h3 class="card-title">Como se preparar para viajar de carro</h3>
@@ -143,7 +146,7 @@
           <p class="card-text text-muted">Last updated 3 days ago</p>
         </div>
       </div>
-      <div class="card">
+      <div class="card border-info">
         <img src="assets/img/economizar.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h3 class="card-title">Dicas de como economizar para futuras viagens</h3>
@@ -153,7 +156,7 @@
           <p class="card-text text-muted">Last updated 5 days ago</p>
         </div>
       </div>
-      <div class="card bg-light">
+      <div class="card bg-light border-info">
         <blockquote class="blockquote mb-0 card-body">
           <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sint adipisci porro facilis dicta modi
             corrupti repellendus provident consectetur, dolorum ipsa cumque, fuga vero aliquid eaque. Eaque possimus
@@ -163,7 +166,7 @@
           </footer>
         </blockquote>
       </div>
-      <div class="card text-black">
+      <div class="card text-black border-info">
         <img src="assets/img/hospedagem.jpeg" class="card-img-top" alt="">
         <div class="card-body">
           <h3 class="card-title">Onde se hospedar?</h3>
@@ -177,52 +180,136 @@
   </div>
 
   <!-- vídeo e texto -->
-
-  <div class="container">
+  <div class="container" id="guiaViajante">
     <div class="row mt-5 mb-5">
       <div class="col-md-6">
-        <h2>Melhores Destinos Nacionais</h2>
+        <h2>Guia de Viagem:</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque fugiat nihil ipsam fuga iure perspiciatis 
-          excepturi aut odio placeat voluptatum reprehenderit, beatae architecto nemo, assumenda obcaecati facere 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque fugiat nihil ipsam fuga iure perspiciatis
+          excepturi aut odio placeat voluptatum reprehenderit, beatae architecto nemo, assumenda obcaecati facere
           commodi ipsa non?
         </p>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quos at, quae distinctio officia sed ab odit. 
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quos at, quae distinctio officia sed ab odit.
           Dicta labore aperiam nulla magnam dignissimos et fuga voluptatem, totam eveniet perspiciatis tenetur?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis odio optio fugit expedita ducimus, 
-          culpa nam cumque sequi, voluptas, tempora eius veniam molestiae nostrum. Mollitia culpa nesciunt dolor 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis odio optio fugit expedita ducimus,
+          culpa nam cumque sequi, voluptas, tempora eius veniam molestiae nostrum. Mollitia culpa nesciunt dolor
           temporibus repellat!
         </p>
       </div>
       <div class="col-md-6">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/6CwI5f9ttJI" frameborder="0" 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FUt_kaYuHUY" frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
       </div>
     </div>
   </div>
 
+  <!-- Cards com os destinos -->
+
+  <div class="container pt-5" id="africa">
+    <div class="card text-white">
+      <img src="assets/img/africa.png" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h2 class="card-title">África</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container py-5" id="america">
+    <div class="card text-white">
+      <img src="assets/img/america.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h2 class="card-title">América</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="antartida">
+    <div class="card text-white">
+      <img src="assets/img/antartida.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h2 class="card-title">Antártida</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container pt-5" id="asia">
+    <div class="card text-white">
+      <img src="assets/img/asia.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h2 class="card-title">Ásia</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container pt-5" id="europa">
+    <div class="card text-white">
+      <img src="assets/img/europa.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h2 class="card-title">Europa</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container pt-5" id="oceania">
+    <div class="card text-white">
+      <img src="assets/img/oceania.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h2 class="card-title">Oceania</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- formulário -->
+
+  <div class="container" id="contato">
+    <div class="row p-5">
+      <div class="col-md-12">
+        <h3 class="text-center">
+          Gostaria de deixar seu depoimento ou nos dar sugestões de viagens? <br> Preencha o formulário:
+        </h3>
+      </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-6 justify-content-center">
+        <form>
+            <div class="mb-3">
+            <label for="nome">Nome*</label>
+            <input type="text" class="form-control shadow-sm p-3 bg-white rounded" id="nome" onkeyup="validaNome()" placeholder="Digite seu nome">
+            <div id="txtNome"></div>
+            </div>
+            <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email*</label>
+            <input type="email" class="form-control shadow-sm p-3 bg-white rounded" id="email" onkeyup="validaEmail()" placeholder="name@example.com">
+            <div id="txtEmail"></div>
+            </div>
+            <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Assunto*</label>
+            <textarea class="form-control shadow-sm bg-white rounded" id="assunto" onkeyup="validaAssunto()" rows="5"></textarea>
+            <div id="txtAssunto"></div>
+            </div>
+          <button onclick="enviar()" class="btn btn-outline-info rounded-pill" type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
   <!-- footer -->
   <hr>
 
   <footer>
     <div class="row mb-3">
       <div class="col-md-12 d-flex justify-content-center p-3">
-          <a href="https://www.instagram.com" target="_blank" class="p-1">
+        <a href="https://www.instagram.com" target="_blank" class="p-1">
           <img class="tamanho-social" src="assets/img/instagram.png" alt="logo do instagram">
-          </a>
-          <a href="https://www.facebook.com" target="_blank" class="p-1">
+        </a>
+        <a href="https://www.facebook.com" target="_blank" class="p-1">
           <img class="tamanho-social" src="assets/img/facebook.png" alt="logo do facebook">
-          </a>
-          <a href="https://www.linkedin.com" target="_blank" class="p-1">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" class="p-1">
           <img class="tamanho-social" src="assets/img/linkedin.png" alt="logo do linkedin">
-          </a>
-          <a href="https://www.twitter.com" target="_blank" class="p-1">
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="p-1">
           <img class="tamanho-social" src="assets/img/twitter.png" alt="logo do twitter">
-          </a>
-       </div>
+        </a>
       </div>
+    </div>
     </div>
 
     <div class="row">
@@ -253,7 +340,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
     integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
     crossorigin="anonymous"></script>
-
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>
